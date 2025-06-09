@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dwello - Find Your Dream Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #ffffff;
+      color: #1f1f1f;
+    }
+
+    header {
+      background-color:#f7dfcd;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+    }
+    .open{
+      width: auto;
+      background-color: #f7dfcd;
+      padding-left: 30px;
+      padding-top: 30px;
+    }
+
+    .search-bar {
+      display: flex;
+      gap: 10px;
+      background-color:#dab295;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    
+    }
+
+    .search-bar select {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .search-bar button{
+      padding: 10px;
+      border-radius: 10px;
+      background-color: #000000;
+      color: #f5efef;
+
+
+    }
+    .hero {
+      display: flex;
+      padding: 40px;
+      gap: 30px;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .hero img {
+      width: 400px;
+      border-radius: 10px;
+    }
+
+    .hero-text h2 {
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 15px;
+    }
+
+    .hero-text p {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    .stats {
+      display: flex;
+      gap: 30px;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    .section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .section h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      font-weight: 700;
+    }
+
+    .features {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .feature-box {
+      background-color: #f7dfcd;
+      border-radius: 10px;
+      padding: 20px;
+      width: 200px;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    .residences {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    .residence {
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+      width: 260px;
+    }
+
+    .residence img {
+      width: 100%;
+    }
+
+    .residence-details {
+      padding: 15px;
+      text-align: left;
+    }
+
+    .reviews {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .review {
+      background-color: #f7dfcd;
+      border-radius: 10px;
+      padding: 20px;
+      width: 250px;
+      text-align: left;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    .footer {
+      padding: 40px 20px;
+      background-color: #f7dfcd;
+      text-align: center;
+    }
+
+    .footer h3 {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    .footer p {
+      margin-bottom: 20px;
+      font-size: 16px;
+    }
+
+    .footer form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .footer input {
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      width: 300px;
+    }
+
+    .footer button {
+      background-color: #000000;
+      color: white;
+      padding: 10px 30px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      width:auto ;
+    }
+  </style>
+</head>
+
+
+<body>
+
+      <div class="open" >
+      <a href="index.html">
+        <img src="./assets/images/logo.png" alt="back">
+      </a>
+    </div>
+  <header>
+
+
+
+    <div class="search-bar">
+      <select>
+        <option>Location</option>
+      </select>
+      <select>
+        <option>Type</option>
+      </select>
+      <select>
+        <option>Price Range</option>
+      </select>
+      <button>Sign up</button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" alt="Home" />
+    <div class="hero-text">
+      <h2>We Help You To Find Your Dream Home</h2>
+      <p>From cozy cottages to luxurious estates, our dedicated team guides you every step of the journey.</p>
+      <div class="stats">
+        <div>8K+<br>Houses Available</div>
+        <div>6K+<br>Houses Sold</div>
+        <div>2K+<br>Trusted Agents</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Why Choose Us</h2>
+    <div class="features">
+      <div class="feature-box">
+        <p><strong>Expert Guidance</strong><br>Navigate home buying with ease.</p>
+      </div>
+      <div class="feature-box">
+        <p><strong>Personalized Service</strong><br>Tailored services to your needs.</p>
+      </div>
+      <div class="feature-box">
+        <p><strong>Transparent Process</strong><br>Clear, simple, honest transactions.</p>
+      </div>
+      <div class="feature-box">
+        <p><strong>Exceptional Support</strong><br>We’re here every step of the way.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Our Popular Residences</h2>
+    <div class="residences">
+      <div class="residence">
+        <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914" alt="San Francisco" />
+        <div class="residence-details">
+          <strong>San Francisco, California</strong><br>4 Rooms · 3,500 sq.ft<br><strong>$2,500,000</strong>
+        </div>
+      </div>
+      <div class="residence">
+        <img src="https://images.unsplash.com/photo-1599423300746-b62533397364" alt="Beverly Hills" />
+        <div class="residence-details">
+          <strong>Beverly Hills, California</strong><br>4 Rooms · 2,500 sq.ft<br><strong>$850,000</strong>
+        </div>
+      </div>
+      <div class="residence">
+        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" alt="Palo Alto" />
+        <div class="residence-details">
+          <strong>Palo Alto, California</strong><br>6 Rooms · 4,000 sq.ft<br><strong>$5,700,000</strong>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>What People Say About Dwello</h2>
+    <div class="reviews">
+      <div class="review">
+        <strong>Sarah Nguyen</strong><br>San Francisco<br>
+        "Dwello's service made my purchase easy. The agents were professional and very supportive."
+      </div>
+      <div class="review">
+        <strong>Michael Rodriguez</strong><br>San Diego<br>
+        "I had an amazing experience! They helped me find a perfect house within my budget."
+      </div>
+      <div class="review">
+        <strong>Emily Johnson</strong><br>Los Angeles<br>
+        "The best real estate service I’ve ever used. Their team was responsive and caring."
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <h2>Do You Have Any Questions?<br>Get Help From Us</h2>
+    <p>💬 Chat live | 📖 Browse our FAQ</p>
+    <input type="email" placeholder="Enter your email address..." />
+    <button>Submit</button>
+  </footer>
+</body>
+
+</html>
